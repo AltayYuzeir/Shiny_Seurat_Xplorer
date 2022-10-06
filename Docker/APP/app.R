@@ -19,7 +19,7 @@ ui = fluidPage(
                       actionButton("uploaddata", "Upload Seurat", icon = icon("upload"),
                                    style = "background:#ccff66;"))),
       hr(),
-      div(tags$em("NB: Max of 9 features can be selected")),
+      div(tags$em("NB: First 9 features will be visualized, the others will be omited.")),
       
       selectizeInput(inputId = "selectfeature", 
                      label = "Select Feature/Gene (not for Dim Plot)", 
