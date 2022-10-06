@@ -19,14 +19,18 @@ ui = fluidPage(
                       actionButton("uploaddata", "Upload Seurat", icon = icon("upload"),
                                    style = "background:#ccff66;"))),
       hr(),
+      div(tags$em("NB: Max of 9 features can be selected")),
+      
       selectizeInput(inputId = "selectfeature", 
                      label = "Select Feature/Gene (not for Dim Plot)", 
                      selected = "Upload Data !", 
                      choices = "Upload Data !",
-                     multiple = FALSE),
+                     multiple = TRUE),
+      
       selectizeInput("groupby", "Parameter 'group.by' (not for Feature Plot)", "Upload Data !"),
+      div(tags$em("NB: 'blend' parameter for Feature plot is set to False.")),
+      
       selectizeInput("splitby", "Parameter 'split.by' (not for DoHeatmap)", "Upload Data !"),
-      #p(tags$em("NB: 'blend' parameter for Feature plot is set to False.")),
       
       hr(),
       fluidRow(column(width = 2, offset = 3,
@@ -111,6 +115,7 @@ server = function(input, output, session){
     group_by = input$groupby
     split_by = input$splitby
     genes_features = input$selectfeature
+    if(length(genes_features) > 9) genes_features = genes_features[1:9]
     
     if(group_by == "--NONE--" & split_by == "--NONE--"){
       
