@@ -3,6 +3,9 @@
 # Seurat Xplorer
 Vizualize features from Seurat data
 
+#
+<img src="Seurat_Xplorer.png" align="center" width=100% height=400 alt="" />
+
 # User manual
 
 [Option 1: Use Seurat Xplorer via docker](#option-1-docker)
@@ -44,3 +47,6 @@ Step 3: Navigate through the different tabs for the different visualizations.
 2. Download/clone the package from the Seurat_Xplorer repository.
 3. Run the app in docker/APP/app.R
 4. Following the steps described in option 2.
+
+
+
