@@ -38,7 +38,7 @@ Step 1: Upload data\
 1.1 Go to website [https://beta.fastgenomics.org/a/seurat_xplorer](https://beta.fastgenomics.org/a/seurat_xplorer) To use the application, unfortunately you need to login with an account. You can register a your own account, but to test the application you can also use our account (Username: intestline@gmail.com Password: intestline).\
 1.2 Upload Seurat .RDS file.
 
-Step 2: Select 1 feature to visualize and the _group.by_ and/or _split.by_ parameters where applicable.
+Step 2: Select up to 9 features/genes to visualize and the _group.by_ and/or _split.by_ parameters where applicable.
 
 Step 3: Navigate through the different tabs for the different visualizations.
 
