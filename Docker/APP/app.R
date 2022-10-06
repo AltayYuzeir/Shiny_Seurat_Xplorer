@@ -26,9 +26,9 @@ ui = fluidPage(
                      selected = "Upload Data !", 
                      choices = "Upload Data !",
                      multiple = TRUE),
+      div(tags$em("NB: 'blend' parameter for Feature plot is set to False.")),
       
       selectizeInput("groupby", "Parameter 'group.by' (not for Feature Plot)", "Upload Data !"),
-      div(tags$em("NB: 'blend' parameter for Feature plot is set to False.")),
       
       selectizeInput("splitby", "Parameter 'split.by' (not for DoHeatmap)", "Upload Data !"),
       
