@@ -18,11 +18,11 @@ A quick way to try Seurat Xplorer. Be aware that the configureation of the serve
 # Option 1: Docker
 1. Pull the docker image to your system
   ```
-  docker pull altayyuzeir/seurat_explorer:v0.1.0
+  docker pull altayyuzeir/seurat_explorer:v0.1.3
   ```
 2. Start the application
   ```
-  docker run --name Seurat_Xplorer -it -p 3838:3838 altayyuzeir/seurat_explorer:v0.1.0 bash
+  docker run --name Seurat_Xplorer -it -p 3838:3838 altayyuzeir/seurat_explorer:v0.1.3 bash
   ```
 3. Once getting into the terminal, open the shiny app
   ```
