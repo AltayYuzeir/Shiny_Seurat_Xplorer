@@ -134,7 +134,7 @@ server = function(input, output, session){
     
     genes = rownames(seurat_data)
     
-    updateSelectizeInput(inputId = "selectfeature", choices = genes, selected = genes[1], )
+    updateSelectizeInput(inputId = "selectfeature", choices = genes, selected = genes[1], server = T )
     updateSelectizeInput(inputId = "groupby", choices = group_by, selected = split_by[1])
     updateSelectizeInput(inputId = "splitby", choices = split_by, selected = split_by[1])
     }
